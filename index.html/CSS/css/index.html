@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-7">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zapatería Virtual - Tus Zapatos Online</title>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/utils.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👞</text></svg>">
+</head>
+<body>
+    <!-- Navegación Principal -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="navbar-brand">
+                <h1>👞 Zapatería Virtual</h1>
+            </div>
+            <ul class="navbar-menu">
+                <li><a href="pages/home.html" class="nav-link">Inicio</a></li>
+                <li><a href="pages/productos.html" class="nav-link">Productos</a></li>
+                <li><a href="pages/contacto.html" class="nav-link">Contacto</a></li>
+            </ul>
+            <div class="navbar-actions">
+                <a href="pages/carrito.html" class="btn-carrito">
+                    <span class="carrito-icon">🛒</span>
+                    <span class="carrito-count" id="carritoCount">0</span>
+                </a>
+                <div class="user-menu">
+                    <button class="btn-usuario" id="btnUsuario">👤</button>
+                    <div class="dropdown-menu" id="dropdownMenu">
+                        <a href="pages/login.html" class="dropdown-item" id="loginLink">Iniciar sesión</a>
+                        <a href="pages/registro.html" class="dropdown-item" id="registroLink">Registrarse</a>
+                        <a href="pages/perfil.html" class="dropdown-item" id="perfilLink" style="display:none;">Mi Perfil</a>
+                        <button class="dropdown-item" id="logoutBtn" style="display:none;">Cerrar sesión</button>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contenedor Principal -->
+    <main class="main-container" id="mainContent">
+        <!-- El contenido se carga dinámicamente aquí -->
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4>Sobre nosotros</h4>
+                <p>La mejor tienda online de zapatos con envío rápido y seguro.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Enlaces rápidos</h4>
+                <ul>
+                    <li><a href="pages/home.html">Inicio</a></li>
+                    <li><a href="pages/productos.html">Productos</a></li>
+                    <li><a href="pages/contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contacto</h4>
+                <p>Email: info@zapateria.com</p>
+                <p>Teléfono: +1 (555) 123-4567</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Zapatería Virtual. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/config.js"></script>
+    <script src="js/storage.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/products.js"></script>
+    <script src="js/ui.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
